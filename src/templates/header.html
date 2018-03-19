@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="framework">
+    <header class="header" id = "home">
+      <div class="wrapper">
+        <div class="header__row">
+          <div class="header__logo">
+            <a href="#">
+              <img class="header__img" src="img/logo.png" alt="">
+            </a>
+          </div>
+          <nav class="nav">
+            <ul class="nav__container">
+              <li class="nav__item"><a class="menu_text" href="#">Find events</a></li>
+              <li class="nav__item"><a class="menu_text" href="#">Create an event</a></li>
+              <li class="nav__item"><a class="menu_text" href="#">Help</a></li>
+              <li class="nav__item isDropDown">
+                <a class="menu_text" href="#">...</a>
+                <div class="dropDown">
+                  <nav class="dropDown__nav">
+                    <ul class="dropDown__itemList">
+                      <li class="dropDown__item"><a class="dropDown__text" href="#">News</a></li>
+                      <li class="dropDown__item"><a class="dropDown__text" href="#">About us</a></li>
+                      <li class="dropDown__item"><a class="dropDown__text" href="#">Contact us</a></li>
+                      <li class="dropDown__item"><a class="dropDown__text" href="#">Downloads</a></li>
+                      <li class="dropDown__item"><a class="dropDown__text" href="#">Privacy policy</a></li>
+                      <li class="dropDown__item"><a class="dropDown__text" href="#">Terms of use</a></li>
+                    </ul>
+                  </nav>
+
+                  <div class="search">
+                    <div class="search__input">
+                      <img src="../img/search.png">
+                      <input class="search__text" type="text" name="keywords" placeholder="Site search">
+                    </div>
+                  </div>
+                  <div class="dropDown__social">
+
+                      <img src="../img/tw.png">
+                      <img src="../img/fb.png">
+                      <img src="../img/gl.png">
+                      <img src="../img/in.png">
+                      <img src="../img/gm.png">
+                      <img src="../img/vb.png">
+
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <nav class="nav sign">
+            <ul class="nav__container">
+              <li class="nav__item"><a class="sign_text" href="#">Sign in</a></li>
+              <li class="nav__item"><a class="sign_text" href="#">Sign up</a></li>
+              <li class="nav__item buy"><a href="#">
+                <img class="buy_img" src="../img/buy.png">
+                <div class="colGoods"></div>
+              </a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header__search">
+        <form class="search">
+          <div class="search__input marginRight">
+            <img src="../img/search.png">
+            <input class="search__text" type="text" name="keywords" placeholder="Search for events by keyword">
+          </div>
+          <input class="btn" type="submit" value="Search">
+        </form>
+        </div>
+
+      </div>
+    </header>

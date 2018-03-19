@@ -1,0 +1,162 @@
+.header {
+  background-color: $base_color;
+  width: 100%;
+  .wrapper {
+    width: 930px;
+    margin: auto;
+    padding: 10px 0 28px 0;
+  }
+  &__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    max-height: 45px;
+  }
+  &__logo{}
+  &__img{
+    max-height: 40px;
+  }
+
+  .nav{
+    &__container{
+      display: flex;
+    }
+    &__item{
+      padding: 5px 18px;
+      border-right: 1px solid $purple_light;
+      margin: auto;
+      &:last-child{
+        border-right: none;
+      }
+      .menu_text{
+        color: $clolor_nav;
+        &.active {
+          color: $clolor_nav_active;
+        }
+        &:hover {
+          color: $clolor_nav_active;
+        }
+      }
+    }
+  }
+  .sign{
+    .sign_text{
+      color: $clolor_nav;
+    &:active{
+      color:$color_sign_active;
+    }
+    &:hover{
+      color:$color_sign_active;
+    }
+    }
+  }
+  &__search{
+
+  }
+  .search {
+    display: flex;
+    justify-content: space-between;
+    &__input{
+      display: flex;
+      padding: 12px;
+      flex: 1;
+      background-color: $white;
+      border-radius: 5px;
+      box-shadow: inset 1.414px 1.414px 1px 0px rgba(35, 0, 61, 0.36);
+      img {
+        float: left;
+        margin: auto 12px auto 0;
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .marginRight{
+      margin-right: 10px;
+    }
+
+    &__text {
+
+      flex: 1;
+      margin-right: 10px;
+
+      border: none;
+      outline: none;
+
+    }
+  }
+  @media screen and (max-width: 900px) {
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    &__toggleBtn {
+      display: block;
+    }
+    &__nav{
+      display: none;
+    }
+  }
+}
+
+.isDropDown, .buy {
+  position: relative;
+}
+
+.dropDown {
+  display: none;
+  background-color: $color_dropDown;
+  position:absolute;
+  left: -110px;
+  top: 45px;
+  padding: 20px;
+  min-width: 290px;
+  border-radius: 5px;
+  box-shadow: $shadow_dpopDown;
+  .search{
+    margin-bottom: 20px;
+  }
+  &__item{
+    margin-bottom: 20px;
+
+  }
+  &__text{
+    color: $purple;
+    &:active{
+      color: $pink;
+    }
+    &:hover{
+      color: $pink;
+    }
+  }
+  &:after{
+    position: absolute;
+    left: 120px;
+    top: -30px;
+    content: '';
+    border: 15px solid transparent;
+    border-bottom: 15px solid $white2;
+  }
+  &__social {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.colGoods{
+  position: absolute;
+  right:0;
+  top: 0;
+  background-color: $pink;
+  border: black;
+  color: white;
+  padding: 0 6px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.visible {
+  display: block;
+}
